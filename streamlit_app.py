@@ -1,6 +1,19 @@
 import pickle
 import numpy as np
 import streamlit as st
+import os
+
+model_path = 'model.pkl'
+# Check if the model file exists
+if os.path.isfile(model_path):
+    try:
+        # Load the pickled model
+        model = pickle.load(open(model_path, 'rb'))
+        st.write('Model loaded successfully!')
+    except Exception as e:
+        st.error(f'Error loading the model: {e}')
+else:
+    st.error(f'Model file "{model_path}" not found.')
 
 model = pickle.load(open('model.pkl', 'rb'))
 
