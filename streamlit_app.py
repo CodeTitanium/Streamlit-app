@@ -86,6 +86,4 @@ if(predict_btn):
         st.text(f"Estimated salary: ${int(salary[0])}")
     with col17:
         st.write('')
-
         
-streamlit run streamlit_app.py
