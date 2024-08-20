@@ -2,8 +2,7 @@
 
 A simple (Streamlit based) web app to predict annual salary.
 
-### The link to the web app (https://stunning-memory-w6pwx47p7pw25r9r-8504.app.github.dev/)
-
+### The link to the web app 
 ### How to run it on your own machine
 
 1. Install the requirements
