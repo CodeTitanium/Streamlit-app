@@ -22,7 +22,7 @@ except ImportError:
     st.error("The sklearn library is not installed. Please install it and try again.")
     st.stop()
 
-model = pickle.load(open('model.pkl', 'rb'))
+model = pickle.load(open(model_path, 'rb'))
 
 col0, col1, col2, col3, col4, col5, col6 = st.columns(7)
 with col0:
