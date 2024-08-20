@@ -3,7 +3,7 @@ import numpy as np
 import streamlit as st
 import os
 
-model_path = 'model.pkl'
+model_path = '/workspaces/Streamlit-app/.github/Streamlit-app/model.pkl'
 # Check if the model file exists
 if os.path.isfile(model_path):
     try:
