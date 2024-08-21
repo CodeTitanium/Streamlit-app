@@ -15,13 +15,6 @@ if os.path.isfile(model_path):
 else:
     st.error(f'Model file "{model_path}" not found.')
 
-# Check if the sklearn library is installed
-try:
-    import sklearn
-except ImportError:
-    st.error("The sklearn library is not installed. Please install it and try again.")
-    st.stop()
-
 model = pickle.load(open(model_path, 'rb'))
 
 col0, col1, col2, col3, col4, col5, col6 = st.columns(7)
