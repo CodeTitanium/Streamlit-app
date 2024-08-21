@@ -1,21 +1,8 @@
 import pickle
 import numpy as np
 import streamlit as st
-import os
 
-model_path = '/workspaces/Streamlit-app/.github/Streamlit-app/model.pkl'
-# Check if the model file exists
-# if os.path.isfile(model_path):
-#     try:
-#         # Load the pickled model
-#         model = pickle.load(open(model_path, 'rb'))
-#         st.write('Model loaded successfully!')
-#     except Exception as e:
-#         st.error(f'Error loading the model: {e}')
-# else:
-#     st.error(f'Model file "{model_path}" not found.')
-
-model = pickle.load(open(model.pkl, 'rb'))
+model = pickle.load(open('model.pkl', 'rb'))
 
 col0, col1, col2, col3, col4, col5, col6 = st.columns(7)
 with col0:
