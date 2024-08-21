@@ -25,7 +25,7 @@ with col1:
 with col2:
     st.write('')    
 with col3:
-    st.title("ⴍage") 
+    st.title("Wage") 
 with col4:
     st.write('')
 with col5:
