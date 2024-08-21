@@ -15,7 +15,7 @@ if os.path.isfile(model_path):
 else:
     st.error(f'Model file "{model_path}" not found.')
 
-model = pickle.load(open(model_path, 'rb'))
+model = pickle.load(open(model.pkl, 'rb'))
 
 col0, col1, col2, col3, col4, col5, col6 = st.columns(7)
 with col0:
